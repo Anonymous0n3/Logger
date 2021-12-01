@@ -1,34 +1,26 @@
 package com.spsmb;
 
-
 public class ConsoleLogger implements Logger {
 
-    private LoggerLevel levelNum;
+    private static levelNum;
 
     @Override
     public void warn(String message) {
-        if(levelNum == LoggerLevel.WARN) {
-            System.out.println(message);
-        }
+        //Jakub
     }
 
     @Override
     public void info(String message) {
-        if(levelNum == LoggerLevel.INFO) {
-            System.out.println(message);
-        }
+        //Tomáš
     }
 
     @Override
     public void error(String message) {
-        if(levelNum == LoggerLevel.ERROR) {
-            System.out.println(message);
-        }
+
     }
 
     @Override
-    public void setLevel(LoggerLevel levelNum) {
-        this.levelNum = levelNum;
-    }
+    public void setLevel(LoggerLevel error) {
 
+    }
 }
