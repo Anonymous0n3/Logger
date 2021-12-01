@@ -7,5 +7,5 @@ public interface Logger {
 
     void error(String message);
 
-    void setLevel(LoggerLevel error);
+    void setLevel(LoggerLevel levelNum);
 }
