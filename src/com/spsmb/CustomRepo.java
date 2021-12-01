@@ -1,13 +1,17 @@
 package com.spsmb;
 
+import com.sun.tools.javac.Main;
+
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public interface CustomRepo {
 
-    Logger log = Logger.getLogger(String.valueOf(Main.class));
+    Logger logger = Logger.getLogger(Main.class.getName());
 
-    static void action() {
-        log.info("TEST");
-    }
+//    static void action() {
+//        log.info("TEST");
+//    }
+//    logger.setLevel(Level.FINE);
 
 }
