@@ -1,6 +1,9 @@
 package com.spsmb;
 
 public class ConsoleLogger implements Logger {
+
+    private static levelNum;
+
     @Override
     public void warn(String message) {
         //Jakub
@@ -13,7 +16,7 @@ public class ConsoleLogger implements Logger {
 
     @Override
     public void error(String message) {
-        //Vojta
+
     }
 
     @Override
