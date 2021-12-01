@@ -4,9 +4,9 @@ import java.util.logging.Logger;
 
 public interface CustomRepo {
 
-    Logger log = LogFactory.getLogger(SomIface.class);
+    Logger log = Logger.getLogger(String.valueOf(Main.class));
 
-    default void action() {
+    static void action() {
         log.info("TEST");
     }
 
